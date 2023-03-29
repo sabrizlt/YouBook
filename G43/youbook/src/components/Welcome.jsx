@@ -4,7 +4,7 @@ function FlushExample() {
   return (
     <Accordion defaultActiveKey="0" flush >
       <Accordion.Item eventKey="0">
-        <Accordion.Header className="mt-3">Welcome in YouBook</Accordion.Header>
+        <Accordion.Header className="mt-5">Welcome in YouBook</Accordion.Header>
         <Accordion.Body>
           Benvenuti in YouBook, qui potete trovare una vasta gamma di libri per
           svagarvi nel vostro tempo libero e trovare ciò che cercate grazie alle

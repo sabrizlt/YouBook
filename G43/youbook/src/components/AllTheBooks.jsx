@@ -8,9 +8,9 @@ import img from "../data/books/horror.json";
 function YouBook() {
   return (
     <Container>
-      <Row className="justify-content-center mt-3">
+      <Row className="justify-content-center mt-3 mb-5">
         {img.map((book, index) => (
-          <Col key={index} xs={8} md={4} lg={4} className="mb-4">
+          <Col key={index} xs={8} md={4} lg={4} className="mb-5">
             {" "}
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="top" src={book.img} />

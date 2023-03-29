@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function MyNav() {
   return (
-    <Navbar bg="dark" variant='dark' expand="lg">
+    <Navbar bg="dark" variant='dark' expand="lg" fixed='top'>
       <Container fluid>
         <Navbar.Brand href="#home">YouBook</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
