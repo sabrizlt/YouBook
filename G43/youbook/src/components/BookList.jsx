@@ -4,7 +4,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
-import books from "../data/books/horror.json"; // importa l'intero file JSON
+import fantasy from "../data/books/fantasy.json";
+import horror from "../data/books/horror.json";
+import history from "../data/books/history.json";
+import romance from "../data/books/romance.json";
+import scifi from "../data/books/scifi.json";
 
 function BookList(props) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -31,8 +35,7 @@ function BookList(props) {
             </Form.Group>
           </Form>
         </Col>
-        {/* utilizza map per creare una lista di componenti per ogni elemento del JSON */}
-        {books.filter(filterBookList).map((book, index) => (
+        {fantasy.concat(horror, history, romance, scifi).filter(filterBookList).map((book, index) => (
           <Col key={index} xs={8} md={4} lg={4} className="mb-5">
             <AllTheBooks book={book} />
           </Col>
