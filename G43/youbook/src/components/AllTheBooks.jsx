@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import "./AllTheBooks.css"; // importa il tuo file CSS
 
@@ -23,6 +24,7 @@ class AllTheBooks extends Component {
           <Card.Title>{this.props.book.title}</Card.Title>
           <Card.Text>{this.props.book.category}</Card.Text>
           <Card.Text>${this.props.book.price}</Card.Text>
+          <Button className="bg-black btnok">ok</Button>
         </Card.Body>
       </Card>
     );

@@ -10,11 +10,14 @@ import history from "../data/books/history.json";
 import romance from "../data/books/romance.json";
 import scifi from "../data/books/scifi.json";
 
-function BookList(props) {
+function BookList() {
   const [searchTerm, setSearchTerm] = useState("");
 
   function filterBookList(book) {
     if (book.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+      return true;
+    }
+    else if (book.category.toLowerCase().includes(searchTerm.toLowerCase())) {
       return true;
     }
     return false;
@@ -35,11 +38,14 @@ function BookList(props) {
             </Form.Group>
           </Form>
         </Col>
-        {fantasy.concat(horror, history, romance, scifi).filter(filterBookList).map((book, index) => (
-          <Col key={index} xs={8} md={4} lg={4} className="mb-5">
-            <AllTheBooks book={book} />
-          </Col>
-        ))}
+        {fantasy
+          .concat(horror, history, romance, scifi)
+          .filter(filterBookList)
+          .map((book, books) => (
+            <Col key={books} xs={8} md={4} lg={4} className="mb-5">
+              <AllTheBooks book={book} />
+            </Col>
+          ))}
       </Row>
     </Container>
   );
