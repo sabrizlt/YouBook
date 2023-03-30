@@ -28,7 +28,7 @@ function BookList(props) {
             <Form.Group>
               <Form.Control
                 type="text"
-                placeholder="Search by title"
+                placeholder="Search"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />

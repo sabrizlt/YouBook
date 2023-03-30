@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
+import "./AllTheBooks.css"; // importa il tuo file CSS
 
 class AllTheBooks extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class AllTheBooks extends Component {
   };
 
   render() {
-    const selectedClass = this.state.selected ? "border border-danger" : "";
+    const selectedClass = this.state.selected ? "selected" : "";
     return (
       <Card className={selectedClass} onClick={this.handleSelect}>
         <Card.Img variant="top" src={this.props.book.img} />
