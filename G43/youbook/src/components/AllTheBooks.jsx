@@ -24,7 +24,7 @@ class AllTheBooks extends Component {
           <Card.Title>{this.props.book.title}</Card.Title>
           <Card.Text>{this.props.book.category}</Card.Text>
           <Card.Text>${this.props.book.price}</Card.Text>
-          <Button className="bg-black btnok">ok</Button>
+          <Button className="bg-black btnOk">Nel carrello </Button>
         </Card.Body>
       </Card>
     );
