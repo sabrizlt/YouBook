@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+}
+
+.carousel-inner
+{
+    height: 120px;
+    background: cover;
+}
+
+
+  
