@@ -4,6 +4,7 @@ import Carousel from "./components/Carosello";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Select from "./components/Select";
+import CarouselNew from "./components/Carousel";
 import Jumbotron from "./components/Jumbotron";
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
     <div className="App">
       
       <Navbar />
-      <Jumbotron />
+      <CarouselNew className="mx-4 mt-3 mb-3 text-light"/>
+      <Jumbotron className="mt-3"/>
       <div className="d-flex">
       <h1 className="text-start mx-4 mt-3 text-light">Home</h1>
       <Select />
