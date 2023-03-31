@@ -16,7 +16,7 @@ class UncontrolledExample extends Component {
     this.setState({ searchTerm: event.target.value });
   };
 
-  getAllReservation = async (searchTerm) => {
+  getAllFilm = async (searchTerm) => {
     try {
       let response = await fetch(
         `http://www.omdbapi.com/?apikey=d6d7d317&s=${searchTerm}`
@@ -40,7 +40,7 @@ class UncontrolledExample extends Component {
   };
 
   componentDidMount() {
-    this.getAllReservation(this.props.myEndpoint);
+    this.getAllFilm(this.props.myEndpoint);
   }
 
   handleSelect = (selectedIndex, e) => {

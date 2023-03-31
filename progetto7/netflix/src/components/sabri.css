@@ -1,9 +1,24 @@
 .container {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }
 
 .carouselSearch {
     height: 200px;
-  }
+}
+
+input.form-control {
+    width: 50%;
+    margin: auto;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+input.form-control::after {
+    width: 50%;
+    margin: auto;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}

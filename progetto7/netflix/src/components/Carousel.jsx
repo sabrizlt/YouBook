@@ -13,7 +13,7 @@ class UncontrolledExample extends Component {
     saga: [],
     activeIndex: 0,
     searchTerm: "",
-    showForm: false
+    showForm: false,
   };
 
   handleSearch = (event) => {
@@ -61,11 +61,15 @@ class UncontrolledExample extends Component {
   }
 
   render() {
-    const { activeIndex, saga, searchTerm, showForm, } = this.state;
+    const { activeIndex, saga, searchTerm, showForm } = this.state;
 
     return (
       <Container>
-        <Button className="mb-3" variant="outline-light" onClick={this.handleToggleForm}>
+        <Button
+          className="mb-3"
+          variant="outline-light"
+          onClick={this.handleToggleForm}
+        >
           {showForm ? "Cerca" : "Cerca"}
         </Button>
         {showForm && (
@@ -98,44 +102,41 @@ class UncontrolledExample extends Component {
               return (
                 <Carousel.Item key={index}>
                   <Row className="d-flex flex-nowrap overflow-hidden">
-                    {saga
-                      .slice(index, index + 6)
-                      .map((data, subIndex) => (
-                        <Col
-                          xs={6}
-                          md={4}
-                          lg={2}
-                          key={data.imdbID}
-                          className="p-0 d-flex justify-content-center"
+                    {saga.slice(index, index + 6).map((data, subIndex) => (
+                      <Col
+                        xs={6}
+                        md={4}
+                        lg={2}
+                        key={data.imdbID}
+                        className="p-0 d-flex justify-content-center"
+                      >
+                        <div
+                          className={`img-wrapper ${
+                            activeIndex === index / 6 + subIndex && "active"
+                          }`}
                         >
-                          <div
-                            className={`img-wrapper ${
-                              activeIndex === index / 6 + subIndex && "active"
-                            }`}
-                          >
-                            <img
-                              className="d-block w-100 m-2"
-                              src={data.Poster}
-                              alt={data.Title}
-
-                              />
-                              <div className="title-wrapper">
-                                <p className="title">{data.Title}</p>
-                              </div>
-                            </div>
-                          </Col>
-                        ))}
-                    </Row>
-                  </Carousel.Item>
-                );
-              } else {
-                return null;
-              }
-            })}
-          </Carousel>
-        </Container>
-      );
-    }
+                          <img
+                            className="d-block w-100 m-2"
+                            src={data.Poster}
+                            alt={data.Title}
+                          />
+                          <div className="title-wrapper">
+                            <p className="title">{data.Title}</p>
+                          </div>
+                        </div>
+                      </Col>
+                    ))}
+                  </Row>
+                </Carousel.Item>
+              );
+            } else {
+              return null;
+            }
+          })}
+        </Carousel>
+      </Container>
+    );
   }
-  
+}
+
 export default UncontrolledExample;
