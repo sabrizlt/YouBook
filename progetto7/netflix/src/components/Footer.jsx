@@ -79,9 +79,9 @@ function Footer() {
                 <FaTwitter size={18} className="text-black me-3 mb-3 mt-5 " />
                 <FaYoutube size={18} className="text-black mb-3 mt-5 " />
                 <ul className="list-unstyled text-center text-md-start  ">
-                  <li className="mb-2">Audio and Subtitles</li>
-                  <li className="mb-2">Media Center</li>
-                  <li className="mb-2">Privacy</li>
+                  <li className="mb-2">Help Center</li>
+                  <li className="mb-2">Jobs</li>
+                  <li className="mb-2">Cookie Preferences</li>
                 </ul>
               </div>
             </div>
@@ -101,9 +101,9 @@ function Footer() {
                 <FaTwitter size={18} className="text-black me-3 mb-3 mt-5 " />
                 <FaYoutube size={18} className="text-black mb-3 mt-5 " />
                 <ul className="list-unstyled text-center text-md-start  ">
-                  <li className="mb-2">Audio and Subtitles</li>
-                  <li className="mb-2">Media Center</li>
-                  <li className="mb-2">Privacy</li>
+                  <li className="mb-2">Gift cards</li>
+                  <li className="mb-2">Terms of Use</li>
+                  <li className="mb-2">Corporate information</li>
                 </ul>
               </div>
             </div>

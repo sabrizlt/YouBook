@@ -16,12 +16,11 @@ function App() {
       
       <Navbar />
       <Jumbotron className="mt-3"/>
+      <CarouselNew className="mx-4 mt-3 mb-3 text-light"/>
       <div className="d-flex">
       <h1 className="text-start mx-4 mt-3 text-light">Home</h1>
       <Select />
       </div>
-      <CarouselNew className="mx-4 mt-3 mb-3 text-light"/>
-
       <h2 className="text-start mx-4 mt-4 text-light">Harry Potter Saga</h2>
       <Carousel myEndpoint={potter} />
       <h2 className="text-start mx-4 mt-5 text-light">Marvel</h2>
