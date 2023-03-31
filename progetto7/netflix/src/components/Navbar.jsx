@@ -4,6 +4,8 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 
@@ -33,19 +35,12 @@ function NavScrollExample() {
           <Nav.Link href="#latest">Latest</Nav.Link>
           <Nav.Link href="#my list">My list</Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-light">Search</Button>
-          </Form>
+          <FontAwesomeIcon className='text-light mx-2' icon={faSearch} />
           <Nav.Link className='text-light mx-2' href="#tv show">KIDS</Nav.Link>
 
           <FontAwesomeIcon className='text-light mx-2'  icon={faBell} />
           <FontAwesomeIcon className='text-light mx-2' icon={faUser} />
+          
 
 
         </Navbar.Collapse>
