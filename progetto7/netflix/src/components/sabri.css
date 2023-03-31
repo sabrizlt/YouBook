@@ -6,6 +6,7 @@
 
 .carouselSearch {
     height: 200px;
+    opacity: 0.8;
 }
 
 input.form-control {
@@ -13,12 +14,5 @@ input.form-control {
     margin: auto;
     background-color: black;
     border: 1px solid white;
-    color: white;
-}
-input.form-control::after {
-    width: 50%;
-    margin: auto;
-    background-color: black;
-    border: 2px solid white;
     color: white;
 }
