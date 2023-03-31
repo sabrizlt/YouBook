@@ -71,7 +71,7 @@ class UncontrolledExample extends Component {
               return (
                 <Carousel.Item key={index}>
                   <Row className="d-flex flex-nowrap overflow-hidden">
-                    {saga.slice(index, index + 6).map((data, subIndex) => (
+                    {saga.slice(index, index + 7).map((data, subIndex) => (
                       <Col
                         xs={6}
                         md={4}
