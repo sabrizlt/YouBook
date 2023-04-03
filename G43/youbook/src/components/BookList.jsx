@@ -44,6 +44,7 @@ function BookList() {
           .map((book, books) => (
             <Col key={books} xs={8} md={4} lg={4} className="mb-5">
               <AllTheBooks book={book} />
+              
             </Col>
           ))}
       </Row>

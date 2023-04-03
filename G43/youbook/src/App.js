@@ -5,7 +5,8 @@ import MyNav from "./components/MyNav";
 import Home from "./components/Home";
 import Welcome from "./components/Welcome";
 import BookList from "./components/BookList";
-import { Button } from "react-bootstrap";
+import CommentList from "./components/CommentsList";
+import CommentArea from "./components/CommentArea";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <MyNav />
       <Welcome />
       <BookList />
+      <CommentList />   
+      <CommentArea /> 
       <Home />
-      <Button />
     </div>
   );
 }
