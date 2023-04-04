@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import AllTheBooks from "./AllTheBooks";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -10,18 +10,17 @@ import history from "../data/books/history.json";
 import romance from "../data/books/romance.json";
 import scifi from "../data/books/scifi.json";
 
-function BookList() {
+const BookList = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  function filterBookList(book) {
+  const filterBookList = (book) => {
     if (book.title.toLowerCase().includes(searchTerm.toLowerCase())) {
       return true;
-    }
-    else if (book.category.toLowerCase().includes(searchTerm.toLowerCase())) {
+    } else if (book.category.toLowerCase().includes(searchTerm.toLowerCase())) {
       return true;
     }
     return false;
-  }
+  };
 
   return (
     <Container>
@@ -44,12 +43,11 @@ function BookList() {
           .map((book, books) => (
             <Col key={books} xs={8} md={4} lg={4} className="mb-5">
               <AllTheBooks book={book} />
-              
             </Col>
           ))}
       </Row>
     </Container>
   );
-}
+};
 
 export default BookList;
