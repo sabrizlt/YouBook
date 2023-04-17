@@ -36,7 +36,7 @@ function Footer() {
                     Service Code
                   </Button>
                   <p className="mb-0 ">
-                    &copy; 1997-2023 Netflix, Inc. i-0023456789
+                    1997-2023 Netflix, Inc. i-0023456789
                   </p>
                 </ul>
               </div>
